@@ -64,7 +64,7 @@ nav ul li {
 nav ul li a {
     color: #000;
     text-decoration: none;
-    font-size: 20px;
+    font-size: 16px;
     position: relative;
 }
 
@@ -109,11 +109,10 @@ marquee {
     flex-wrap: wrap;
     margin: 20px;
     padding: 20px;
-    /* height: 100vh; */
 }
 
 #introduction .section {
-    padding: 60px;
+    padding: 40px;
     flex: 1; /* Allow sections to take up equal space */
     min-width: 45%; 
 }
@@ -128,7 +127,7 @@ marquee {
 }
 
 #introduction .section p {
-    font-size: 20px;
+    font-size: 16px;
     margin-top: 20px;
 }
 
@@ -202,7 +201,6 @@ marquee {
 .services-list div img {
     width: 130px;
     margin-bottom: 20px;
-
 }
 
 .services-list div h2 {
@@ -246,7 +244,7 @@ marquee {
 }
 
 #partners h1 {
-    font-size: 40px;
+    font-size: 35px;
 }
 
 #feature {
@@ -268,7 +266,7 @@ marquee {
     box-shadow: 20px 20px 34px rgba(0, 0, 0, 0.03);
     border: 1px solid #d4e2d6;
     border-radius: 4px;
-    margin: 15px 40px;
+    margin: 15px 28px;
 }
 
 #feature .fe-box:hover {
@@ -303,7 +301,7 @@ marquee {
 #banner h2 {
     color: #fff;
     font-size: 30px;
-    padding: 30px;
+    padding: 10px;
 }
 
 #banner h2 span {
@@ -341,7 +339,7 @@ marquee {
 
 #banner .m_data h3 {
     color: #fff;
-    font-size: 20px;
+    font-size: 18px;
     padding: 10px 0;
 }
 
@@ -357,12 +355,12 @@ marquee {
 }
 
 #glimpses h1 {
-    font-size: 50px;
+    font-size: 35px;
     margin-bottom: 10px;
 }
 
 #glimpses h2 {
-    font-size: 28px;
+    font-size: 25px;
     font-weight: 550;
 }
 
@@ -372,12 +370,12 @@ marquee {
     justify-content: center;
     align-items: center;
     width: 100%;
-    padding: 10px;
+    /* padding: 10px; */
 }
 
 .glimpse div {
-    margin: 20px;
-    width: 500px;
+    margin: 15px;
+    width: 550px;
     height: auto;
     border-radius: 10px;
     box-shadow: 20px 20px 34px rgba(0, 0, 0, 0.06);
@@ -402,14 +400,14 @@ marquee {
 }
 
 #newsletter h4 {
-    font-size: 22px;
+    font-size: 20px;
     font-weight: 700;
     color: #fff;
     padding-bottom: 20px;
 }
 
 #newsletter p {
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 600;
     color: #818ea0;
 }
@@ -482,12 +480,12 @@ footer h4 {
 }
 
 footer p {
-    font-size: 15px;
+    font-size: 14px;
     margin: 0 0 8px 0;
 }
 
 footer a {
-    font-size: 15px;
+    font-size: 14px;
     text-decoration: none;
     color: #222;
     margin: 10px;
@@ -548,11 +546,11 @@ footer .copyright {
 }
 
 #about-head div h1 {
-    font-size: 50px;
+    font-size: 40px;
 }
 
 #about-head div p {
-    font-size: 20px;
+    font-size: 18px;
 }
 
 #product1 {
@@ -592,13 +590,13 @@ footer .copyright {
     border-radius: 10px;
     margin: 25px;
     text-align: start;
-    font-size: 20px;
+    font-size: 16px;
 }
 
 #values .container div {
     margin-top: 10px;
     margin-bottom: 10px;
-    font-size: 40px;
+    font-size: 36px;
 }
 
 #mission-vision {
@@ -622,7 +620,7 @@ footer .copyright {
     border: 2px solid #d4e2d6;
     border-radius: 10px;
     text-align: start;
-    font-size: 20px;
+    font-size: 18px;
 }
 
 #mission-vision .container img {
@@ -665,11 +663,11 @@ footer .copyright {
 
 #whatwedo h1 {
     text-align: center;
-    font-size: 40px;
+    font-size: 35px;
 }
 
 #whatwedo p {
-    font-size: 20px;
+    font-size: 18px;
     padding: 20px;
 }
 
@@ -700,15 +698,15 @@ footer .copyright {
 }
 
 #services-service .container-details h2 {
-    font-size: 30px;
+    font-size: 25px;
 }
 
 #services-service .container-details p {
-    font-size: 20px;
+    font-size: 16px;
 }
 
 #services-service .container-details p span {
-    font-weight: 700;
+    font-weight: 600;
 }
 
 /* partners */
@@ -750,18 +748,18 @@ footer .copyright {
 }
 
 #partners-partner .partner .partner-detail h1 {
-    font-size: 30px;
+    font-size: 28px;
     margin-bottom: 10px;
 }
 
 #partners-partner .partner .partner-detail p {
-    font-size: 18px;
+    font-size: 16px;
     margin-bottom: 20px;
 }
 
 #partners-partner .partner .partner-detail a {
     text-decoration: none;
-    font-size: 18px;
+    font-size: 16px;
     color: #000;
     font-weight: 300;
     position: relative;
@@ -873,7 +871,6 @@ footer .copyright {
     height: 50vh;
     width: 100%;
 }
-
 
 #pickup {
     margin: 70px;
@@ -1004,7 +1001,7 @@ form textarea:focus {
 
 #services-service .blog a {
     text-decoration: none;
-    font-size: 18px;
+    font-size: 16px;
     color: #000;
     font-weight: 550;
     position: relative;
@@ -1021,12 +1018,12 @@ form textarea:focus {
 
 .blog-list .blog p {
     margin: 20px 0 20px 0;
-    font-size: 18px;
+    font-size: 16px;
 }
 
 .blog-list h1 {
     margin: 30px 0;
-    font-size: 50px;
+    font-size: 35px;
     text-align: center;
 }
 
