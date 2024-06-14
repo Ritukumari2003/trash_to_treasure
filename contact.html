@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE = edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trash To Treaure Hub</title>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="assets/logo.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="partners.html">Partners</a></li>
+                    <li><a href="schedule_pickup.html">Schedule Pickup</a></li>
+                    <li><a href="blogs.html">Blogs</a></li>
+                    <li><a class="active" href="contact.html">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+        </div>
+    </div>
+
+    <section id="page-header" class="contact-header">
+    </section>
+
+    <section id="contact-details" class="section-p1">
+        <div class="details">
+            <span>GET IN TOUCH</span>
+            <h2>Visit one of our agency locations or contact us today</h2>
+            <h3>Head Office</h3>
+            <div>
+                <li>
+                    <i class="fal fa-map"></i>
+                    <p> abcdef, Rajendra Place, New Delhi 110000</p>
+                </li>
+                <li>
+                    <i class="far fa-envelope"></i>
+                    <p>trashtotreasure@gmail.com</p>
+                </li>
+                <li>
+                    <i class="fas fa-phone-alt"></i>
+                    <p> (+91) 12345 56789 / (+91) 25631 45678</p>
+                </li>
+                <li>
+                    <i class="fal fa-clock"></i>
+                    <p>Monday to Saturday: 9.00am to 16.00pm</p>
+                </li>
+            </div>
+        </div>
+
+        <div class="map" data-aos="zoom-in" data-aos-duration="2000">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d30773484.55170563!2d61.0245165611659!3d19.69009515037612!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30635ff06b92b791%3A0xd78c4fa1854213a6!2sIndia!5e0!3m2!1sen!2sin!4v1712031462205!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </section>
+
+    <section id="form-details">
+        <form name="submit-to-google-sheet" onsubmit="sendcontactEmail();">
+            <span>LEAVE A MESSAGE</span>
+            <h2>We love to hear from you</h2>
+            <input type="text"  id="name" name = "Name" placeholder="Your Name" required>
+            <input type="text" id="email" name = "Email" placeholder="Your Email" required>
+            <textarea name="Message" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
+            <button class="normal">Submit</button>
+            <span id="msg"></span>
+        </form>
+
+        <div class="people">
+            <div  data-aos="fade-right" data-aos-duration="2000">
+                <img src="assets/contact/img1.jpg" alt="">
+                <p><span>Holly Williams</span> Chief Executive Officer<br>Phone: 9811XXXXXX</p>
+            </div>
+            <div data-aos="fade-left" data-aos-duration="2000">
+                <img src="assets/contact/img2.jpg" alt="">
+                <p><span>Christian Bale</span> Senior Marketing Manager<br>Phone: 9811XXXXXX</p>
+            </div>
+            <div data-aos="fade-right" data-aos-duration="2000">
+                <img src="assets/contact/img3.jpg" alt="">
+                <p><span> Sidney Poitieri</span> Senior Business Analyst<br>Phone: 9811XXXXXX</p>
+            </div>
+            <div data-aos="fade-left" data-aos-duration="2000">
+                <img src="assets/contact/img4.jpg" alt="">
+                <p><span> Jillian Harris</span> Management Head<br>Phone: 9811XXXXXX</p>
+            </div>
+            <div data-aos="fade-right" data-aos-duration="2000">
+                <img src="assets/contact/img5.jpg" alt="">
+                <p><span> Monica Geller</span> Junior Management Head<br>Phone: 9811XXXXXX</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="newsletter" class="section-p1 section-m1">
+        <div class="newstext">
+            <h4>Sign Up For Newsletters</h4>
+            <p>Get E-mail updates about our latest <span>events and occassions.</span></p>
+        </div>
+        <div class="form">
+            <form class="newspaper-form" onsubmit="sendEmail(); reset(); return false;">
+                <input id="signup" type="email" placeholder="Your email address" required>
+                <button class="normal">Sign Up</button>
+            </form>
+        </div>
+    </section>
+
+    <footer class="section-p1">
+        <div class="col">
+            <img class="logo" src="assets/logo2.png" alt="">
+            <h4>Contact</h4>
+            <p><strong>Address:</strong> abcdef, Rajendra Place, New Delhi 110043</p>
+            <p><strong>Phone:</strong> (+91) 12345 56789 / (+91) 25631 45678</p>
+            <p><strong>Hours:</strong> 10:00 - 22:00</p>
+            <div class="follow">
+                <h4>Follow us</h4>
+                <div class="icon">
+                    <i class="fab fa-facebook-f"></i>
+                    <i class="fab fa-twitter"></i>
+                    <i class="fab fa-instagram"></i>
+                    <i class="fab fa-pinterest-p"></i>
+                    <i class="fab fa-youtube"></i>
+                </div>
+            </div>
+        </div>
+
+        <div class="col">
+            <h4>About</h4>
+            <a href="about.html">About us</a>
+            <a href="schedule_pickup.html">Pick Up Schedule</a>
+            <a href="assets/policy_pdfs/privacy_policy.pdf" download>Privacy Policy</a>
+            <a href="assets/policy_pdfs/terms_and_conditions.pdf" download>Terms & Conditions</a>
+            <a href="contact.html">Contact us</a>
+        </div>
+
+        <div class="col">
+            <h4>Useful Links</h4>
+            <a href="blogs.html">Read Blogs</a>
+            <a href="partners.html">Partners Information</a>
+            <a href="services.html">Our Services</a>
+            <a href="contact.html">Help</a>
+        </div>
+
+        <div class="col install">
+            <h4>Install App</h4>
+            <p>From App Store or Google Play</p>
+            <div class="row">
+                <img src="assets/pay/app.jpg" alt="">
+                <img src="assets/pay/play.jpg" alt="">
+            </div>
+            <p>Secured Payment Gateways</p>
+            <img src="assets/pay/pay.png" alt="">
+        </div>
+
+        <div class="copyright">
+            <p>Trademark & Copyright Notice:™ and © 2024 LLC. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+     <!-- animation on scroll  -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            disable: window.innerWidth < 477
+        });
+    </script>
+    <!-- jquery  -->
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <!-- counter up  -->
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
+    <script src="jquery.counterup.min.js"></script>
+    <script>
+        jQuery(document).ready(function ($) {
+            $('.counter').counterUp({
+                delay: 10,
+                time: 1000
+            });
+        });
+    </script>
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+        function openmenu() {
+            sidemenu.style.right = "0";
+        }
+
+        function closemenu() {
+            sidemenu.style.right = "-200px";
+        }
+    </script>
+    <!-- newsletter -->
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script>
+        function sendEmail() {
+            Email.send({
+                Host: "smtp.elasticemail.com",
+                Username: "2503.ritu@gmail.com",
+                Password: "300BA5FCF6097F8D0BAE22D1C089600D7B3E",
+                To: document.getElementById("signup").value,
+                From: "2503.ritu@gmail.com",
+                Subject: "Join Our Eco-Community: Get Ready for Green Events & Recycling Occasions! ♻️",
+                Body: "Hello Subscriber, <br><br>"+"Welcome to Trash And Treasure..<br><br>"+
+                      "Thank you for signing up for our newsletter! Get ready to stay informed about upcoming events and special occasions at our website-Trash to Treasure. We look forward to keep you updated and sharing exciting news with you soon!"
+            }).then(
+                message => alert("Congratulations, Signed Up Successfully...")
+            );
+        }
+    </script>
+    <!-- contact email send  -->
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script>
+        function sendcontactEmail() {
+            Email.send({
+                Host: "smtp.elasticemail.com",
+                Username: "2503.ritu@gmail.com",
+                Password: "713B4CAF53A7672BD717EAF5EDE3F0C618D4",
+                To: document.getElementById("email").value,
+                From: "2503.ritu@gmail.com",
+                Subject: "Your Message Matters: Joining Forces for a Greener Tomorrow! 🌿",
+                Body: document.getElementById("email").value + "<br><br>"+
+                    "Dear "+ document.getElementById("name").value + ",<br><br>"+
+
+                    "Thank you for reaching out to us and leaving a message on our website regarding e-waste recycling. We appreciate your interest in responsible waste management and environmental sustainability.<br><br>" +
+
+                    "Your message has been received, and our team will review it promptly. We strive to respond to all inquiries as quickly as possible, so please expect to hear back from us shortly.<br><br>" +
+
+                    "In the meantime, if you have any urgent questions or concerns, feel free to contact us directly at Phone No. : 9856XXXXXX.<br><br>" +
+
+                    "Best regards,<br><br>" +
+                    "Team : Trash to Treasure"
+            }).then(
+                message => alert(message)
+            );
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE = edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trash To Treaure Hub</title>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="assets/logo.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="partners.html">Partners</a></li>
+                    <li><a href="schedule_pickup.html">Schedule Pickup</a></li>
+                    <li><a href="blogs.html">Blogs</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+        </div>
+    </div>
+
+    <section id="page-header" class="data-header">
+    </section>
+
+    <div id="data-content">
+        <div class="chart-container">
+            <h1>Electronic waste generated worldwide</h1>
+            <p>
+                Since 2010, there has been a consistent upward trend in global e-waste generation, with approximately
+                53.6 million metric tons produced by 2019. This marked a staggering increase of 44.4 million metric tons
+                over just five years, a concerning acceleration. Regrettably, only a mere 17.4 percent of this vast
+                amount was recorded as collected and properly recycled.
+
+                Additional insights into electronic waste worldwide reveal that technological advancements and surging
+                consumer demand have solidified electronics as a significant component of the waste stream. In 2014, the
+                global quantity of e-waste predominantly consisted of 12.8 million metric tons of small equipment, 11.8
+                million metric tons of large equipment, and 7 million metric tons of temperature exchange equipment,
+                including cooling and freezing devices. Projections indicated that the total amount of e-waste was
+                poised to reach nearly 50 million metric tons by 2018, with a growth rate averaging between 4 to 5
+                percent annually.
+
+                In 2014, Asia emerged as the primary contributor to global e-waste, generating a staggering 16 million
+                metric tons, a region predicted to undergo significant growth in the electrical and electronics industry
+                from 2014 through 2016. In comparison, both the Americas and Europe produced approximately 11.6 million
+                metric tons each. Notably, Europe exhibited the highest per inhabitant e-waste quantity, with 15.6
+                kilograms per person, closely followed by Oceania at 15.2 kilograms per person, and the Americas at 12.2
+                kilograms per person. These figures underscore the critical need for proactive measures to manage and
+                mitigate the mounting electronic waste crisis on a global scale.
+            </p>
+            <canvas id="myChart" width="1400" height="700" aria-label="chart" role="img"></canvas>
+        </div>
+
+        <div class="chart-container data1">
+            <div>
+                <h2>Mobile phones</h2>
+                <p>
+                    Data Showing number of mobile phones recycled per year in million tons
+                </p>
+                <canvas id="g_mobiles" width="500" height="500" aria-label="chart" role="img"></canvas>
+            </div>
+
+            <div>
+                <h2>Laptops</h2>
+                <p>
+                    Data Showing number of laptops recycled per year in million tons
+                </p>
+                <canvas id="g_laptops" width="500" height="500" aria-label="chart" role="img"></canvas>
+            </div>
+        </div>
+
+        <div class="chart-container data2">
+            <h1>Home appliances recycled worldwide</h1>
+            <p>
+                Every year, a substantial amount of e-waste from home appliances is recycled worldwide, contributing to environmental sustainability efforts. As consumers upgrade their electronic devices and appliances, such as refrigerators, washing machines, and televisions, old and outdated units are often disposed of or recycled. Through specialized recycling programs and facilities, these discarded appliances are dismantled, sorted, and processed to recover valuable materials like metals, plastics, and glass. Not only does this practice divert e-waste from landfills, but it also conserves finite resources and reduces the environmental impact associated with electronic waste disposal. By prioritizing responsible recycling practices for home appliances, communities and industries contribute to the circular economy and work towards a more sustainable future.
+            </p>
+            <canvas id="myChart2" width="1400" height="700" aria-label="chart" role="img"></canvas>
+        </div>
+
+        <div class="conclusion">
+            <h1>Conclusion</h1>
+            <p>
+                In conclusion, the data on e-waste generated and recycled worldwide per year underscores the urgent need for enhanced recycling efforts and sustainable waste management practices. With e-waste volumes steadily rising, reaching approximately 53.6 million metric tons by 2019, and only a fraction being properly recycled, there is a critical gap in addressing this environmental challenge. However, proactive measures such as improving collection systems, promoting responsible disposal, and investing in innovative recycling technologies offer promising avenues for mitigating the adverse impacts of electronic waste. By prioritizing global collaboration and collective action, we can strive towards a more circular economy, where electronic products are recycled efficiently, conserving resources and minimizing environmental harm.
+            </p>
+        </div>
+    </div>
+
+    <section id="newsletter" class="section-p1 section-m1">
+        <div class="newstext">
+            <h4>Sign Up For Newsletters</h4>
+            <p>Get E-mail updates about our latest <span>events and occassions.</span></p>
+        </div>
+        <div class="form">
+            <form class="newspaper-form" onsubmit="sendEmail(); reset(); return false;">
+                <input id="signup" type="email" placeholder="Your email address" required>
+                <button class="normal">Sign Up</button>
+            </form>
+        </div>
+    </section>
+
+    <footer class="section-p1">
+        <div class="col">
+            <img class="logo" src="assets/logo2.png" alt="">
+            <h4>Contact</h4>
+            <p><strong>Address:</strong> abcdef, Rajendra Place, New Delhi 110043</p>
+            <p><strong>Phone:</strong> (+91) 12345 56789 / (+91) 25631 45678</p>
+            <p><strong>Hours:</strong> 10:00 - 22:00</p>
+            <div class="follow">
+                <h4>Follow us</h4>
+                <div class="icon">
+                    <i class="fab fa-facebook-f"></i>
+                    <i class="fab fa-twitter"></i>
+                    <i class="fab fa-instagram"></i>
+                    <i class="fab fa-pinterest-p"></i>
+                    <i class="fab fa-youtube"></i>
+                </div>
+            </div>
+        </div>
+
+        <div class="col">
+            <h4>About</h4>
+            <a href="about.html">About us</a>
+            <a href="schedule_pickup.html">Pick Up Schedule</a>
+            <a href="assets/policy_pdfs/privacy_policy.pdf" download>Privacy Policy</a>
+            <a href="assets/policy_pdfs/terms_and_conditions.pdf" download>Terms & Conditions</a>
+            <a href="contact.html">Contact us</a>
+        </div>
+
+        <div class="col">
+            <h4>Useful Links</h4>
+            <a href="blogs.html">Read Blogs</a>
+            <a href="partners.html">Partners Information</a>
+            <a href="services.html">Our Services</a>
+            <a href="contact.html">Help</a>
+        </div>
+
+        <div class="col install">
+            <h4>Install App</h4>
+            <p>From App Store or Google Play</p>
+            <div class="row">
+                <img src="assets/pay/app.jpg" alt="">
+                <img src="assets/pay/play.jpg" alt="">
+            </div>
+            <p>Secured Payment Gateways</p>
+            <img src="assets/pay/pay.png" alt="">
+        </div>
+
+        <div class="copyright">
+            <p>Trademark & Copyright Notice:™ and © 2024 LLC. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <!-- animation on scroll  -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            disable: window.innerWidth < 477
+        });
+    </script>
+    <!-- data analysis -->
+    <script src="js/chart.js"></script>
+    <script src="js/custom.js"></script>
+    <!-- jquery  -->
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <!-- counter up  -->
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
+    <script src="jquery.counterup.min.js"></script>
+    <script>
+        jQuery(document).ready(function ($) {
+            $('.counter').counterUp({
+                delay: 10,
+                time: 1000
+            });
+        });
+    </script>
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+        function openmenu() {
+            sidemenu.style.right = "0";
+        }
+
+        function closemenu() {
+            sidemenu.style.right = "-200px";
+        }
+    </script>
+     <!-- newsletter -->
+     <script src="https://smtpjs.com/v3/smtp.js"></script>
+     <script>
+        function sendEmail() {
+            Email.send({
+                Host: "smtp.elasticemail.com",
+                Username: "2503.ritu@gmail.com",
+                Password: "300BA5FCF6097F8D0BAE22D1C089600D7B3E",
+                To: document.getElementById("signup").value,
+                From: "2503.ritu@gmail.com",
+                Subject: "Join Our Eco-Community: Get Ready for Green Events & Recycling Occasions! ♻️",
+                Body: "Hello Subscriber, <br><br>"+"Welcome to Trash And Treasure..<br><br>"+
+                      "Thank you for signing up for our newsletter! Get ready to stay informed about upcoming events and special occasions at our website-Trash to Treasure. We look forward to keep you updated and sharing exciting news with you soon!"
+            }).then(
+                message => alert("Congratulations, Signed Up Successfully...")
+            );
+        }
+    </script>
+</body>
+
+</html>
