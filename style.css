@@ -256,7 +256,7 @@ marquee {
 }
 
 #feature .fe-box {
-    width: 200px;
+    width: 180px;
     height: 200px;
     display: flex;
     flex-direction: column;
